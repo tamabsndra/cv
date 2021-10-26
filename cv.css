@@ -279,7 +279,7 @@ a {
 @media (max-width: 992px) {
   #hero:before {
     content: "";
-    background: rgba(255, 255, 255, 0.8);
+    background: black;
     position: absolute;
     bottom: 0;
     top: 0;
