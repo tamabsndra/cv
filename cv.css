@@ -15,7 +15,6 @@ a {
 /* NAVBAR */
 #navbar {
   transition: 0.5s linear;
-  top: -60px;
 }
 
 #navbarNavAltMarkup {
@@ -27,7 +26,7 @@ a {
 .top {
   background-color: #191414;
   border-radius: 10px;
-  padding: 20px 0 90px 0;
+  padding: 40px 0 120px 0;
 }
 
 .top img {
@@ -114,21 +113,21 @@ a {
   margin-top: 10px;
   background-color: #191414;
   border-radius: 10px;
-  padding: 80px 30px 20px 30px;
+  padding: 80px 30px 100px 30px;
 }
 
 #resume {
   margin-top: 10px;
   background-color: #191414;
   border-radius: 10px;
-  padding: 80px 30px 20px 30px;
+  padding: 80px 30px 100px 30px;
 }
 
 #portofolio {
   margin-top: 10px;
   background-color: #191414;
   border-radius: 10px;
-  padding: 80px 30px 20px 30px;
+  padding: 80px 30px 100px 30px;
 }
 
 #contact {
@@ -279,7 +278,7 @@ a {
 @media (max-width: 992px) {
   #hero:before {
     content: "";
-     background-color: black;
+    background-color: black;
     position: absolute;
     bottom: 0;
     top: 0;
@@ -294,4 +293,34 @@ a {
     font-size: 18px;
     line-height: 24px;
   }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #1ed760;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: black;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #1db954;
+  color: black;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
